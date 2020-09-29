@@ -1,0 +1,21 @@
+<%- include('partials/head.ejs'); %>
+
+<body>
+  <section class="perguntar">
+    <div class="container">
+      <h1 class="titulo">Realizar Pergunta</h1>
+      <form action="/salvarpergunta" method="POST" class="form_pergunta">
+        <label for="titulo">Título</label>
+        <input type="text" id="titulo" autocomplete="off" name="titulo" placeholder="Título">
+        <label for="descricao">Descrição</label>
+        <textarea id="descricao" name="descricao" placeholder="Descreva sua pergunta aqui.."></textarea>
+        <div class="btn_perguntar">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <%- include('partials/footer.ejs'); %>
+</body>
+
+</html>

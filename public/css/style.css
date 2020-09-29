@@ -1,0 +1,184 @@
+body,
+div,
+section,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(25, 25, 25);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  padding: 15px;
+}
+
+.perguntar {
+  margin-top: 50px;
+}
+
+.titulo {
+  font-size: 35px;
+  font-family: open sans;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  color: white;
+}
+
+.form_pergunta input,
+textarea {
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+  border: 3px solid #888;
+  border-radius: 3px;
+  background: none;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.form_pergunta input::placeholder,
+textarea::placeholder {
+  color: rgb(230, 230, 230);
+}
+
+.form_pergunta label {
+  margin-top: 15px;
+  margin-bottom: 7px;
+  display: block;
+  font-size: 19px;
+  letter-spacing: 1px;
+  color: rgb(150, 150, 150);
+}
+
+.form_pergunta textarea {
+  height: 150px;
+}
+
+.btn_perguntar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn_perguntar button {
+  padding: 10px 25px;
+  margin-top: 20px;
+  color: none;
+  background: rgb(200, 200, 200);
+  border: none;
+  font-size: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn_perguntar button:hover {
+  background: rgb(250, 250, 250);
+}
+
+.fazer_pergunta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0px;
+}
+
+.fazer_pergunta h2 {
+  color: white;
+}
+
+.fazer_pergunta a {
+  text-decoration: none;
+  color: #222;
+  padding: 10px 25px;
+  background: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.perguntas {
+  margin-top: 30px;
+}
+
+.pergunta_individual {
+  margin: 25px 0;
+  padding: 20px;
+  background: rgba(55, 55, 55);
+  border-radius: 20px;
+}
+
+.pergunta_individual h2 {
+  color: white;
+  padding: 10px 0;
+}
+
+.pergunta_individual p {
+  color: rgb(220, 220, 220);
+  font-size: 18px;
+  text-indent: 25px;
+}
+
+.form_resposta textarea {
+  margin-top: 30px;
+  border-radius: 6px;
+  color: white;
+}
+
+.resposta_individual {
+  padding: 15px;
+  background: rgb(100, 100, 100);
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.seta_back {
+  margin: 20px 0;
+  width: 40px;
+  height: 4px;
+  background: white;
+  position: relative;
+}
+
+.seta_back::before {
+  content: '';
+  width: 20px;
+  height: 4px;
+  background: white;
+  position: absolute;
+  top: -6px;
+  left: -4px;
+  transform: rotate(135deg);
+}
+
+.seta_back::after {
+  content: '';
+  width: 20px;
+  height: 4px;
+  background: white;
+  position: absolute;
+  top: 5.5px;
+  left: -4px;
+  transform: rotate(45deg);
+}

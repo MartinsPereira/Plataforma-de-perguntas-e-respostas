@@ -1,0 +1,35 @@
+<%- include("partials/head") %>
+
+<body>
+  <div class="container">
+    <a href="/">
+      <div class="seta_back">
+      </div>
+    </a>
+  </div>
+  <section>
+    <div class="container">
+      <div class="pergunta_individual">
+        <h2><%= pergunta.titulo %></h2>
+        <p><%= pergunta.descricao %></p>
+        <form action="/responder" class="form_pergunta form_resposta" method="Post">
+          <textarea placeholder="Digite sua resposta.." name="resposta"></textarea>
+          <input type="hidden" name="pergunta" value="<%= pergunta.id %>">
+          <div class="btn_perguntar">
+            <button type="submit">Responder</button>
+          </div>
+        </form>
+      </div>
+      <div class="pergunta_individual">
+        <h2>Respostas</h2>
+        <% respostas.forEach(item => { %>
+        <div class="resposta_individual">
+          <p><%= item.corpo %></p>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+</body>
+
+<%- include("partials/footer") %>
